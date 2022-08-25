@@ -10,4 +10,4 @@ if(edad < 14){
     alert ("Puedes mirar la pelicula!")
 }
 
-alert ("Si puedes ver la pelicula, que la disfrutes!")
+alert ("Si puedes ver la pelicula, que la disfrutes la pelicula!")
