@@ -1,13 +1,17 @@
-let nombre = prompt("Ingrese su nombre")
-alert(`Bienveni@ ${nombre}, veamos si puedes ver la siguiente pelicula`)
+alert ("Te ayudo a calcular el porcentaje de un numero");
 
-let edad = parseInt(prompt("Ingrese su edad"))
-if(edad < 14){
-    alert("Eres muy pequeño para ver esta pelicula")
-} else if(edad < 18){
-    alert("Debes mirar la pelicula con un mayor")
-} else if(edad >= 18){
-    alert ("Puedes mirar la pelicula!")
+
+function porcentajes(porcentaje, total, operacion){
+    operacion = porcentaje * total;
+    return operacion / 100;
 }
 
-alert ("Si puedes ver la pelicula, que la disfrutes la pelicula!")
+
+let porcentaje = parseInt(prompt("Ingrese el porcentaje a calcular"));
+let total = parseInt(prompt("Ingrerse el numero al que le calculamos el porcentaje"));
+let operacion = porcentaje * total;
+
+
+let resultado = porcentajes(porcentaje, total, operacion);
+
+alert(`El ${porcentaje}% de ${total} es: ${resultado}`)
