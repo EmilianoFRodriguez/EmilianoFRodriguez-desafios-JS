@@ -14,6 +14,22 @@ let Hufflepuff = document.getElementById("btnCasaH");
 parrafo.innerHTML = `Hola ${nombre}, bienvenido a Hogwarts. Escuela de magia y hechiceria.
 La casa de ${casa} estamuy orgullosa de tenerte como alumno.`;
 
-function cambiarBG(bg){
-    divParrafo.innerHTML = ``;
+function cambiarBgG(){
+    divParrafo.className = "bgRojo";
+};
+function cambiarBgS(){
+    divParrafo.className = "bgVerde";
 }
+function cambiarBgR(){
+    divParrafo.className = "bgAzul";
+
+}function cambiarBgH(){
+    divParrafo.className = "bgAmarillo";
+}
+
+
+
+Grifindor.addEventListener("click", cambiarBgG);
+Slytherin.addEventListener("click", cambiarBgS);
+Ravenclaw.addEventListener("click", cambiarBgR);
+Hufflepuff.addEventListener("click", cambiarBgH);
